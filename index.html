@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background: transparent;
+			margin: 0;
+			padding: 0;
+			margin-top: 10px;
+			}
+
+			.container {
+			height: 130px;
+			vertical-align: bottom;
+			position: relative;
+			z-index: 10;
+			width: 24px;
+			margin: 0 auto;
+			}
+
+			.handle {
+			width: 24px;
+			height: 6px;
+			background: #aaa;
+			cursor: pointer;
+			}
+
+			.rod {
+			height: 54px;
+			width: 8px;
+			background: #888;
+			z-index: 5;
+			margin: auto;
+			}
+
+			.body {
+			width: 16px;
+			height: 70px;
+			padding: 3px;
+			background: #ccc;
+			box-sizing: border-box;
+			position: absolute;
+			bottom: 0;
+			left: 3px;
+			cursor: pointer;
+			}
+
+			.volume-level {
+			height: 100%;
+			width: 100%;
+			background: lawngreen;
+			cursor: pointer;
+			}
+
+			.volume-window {
+			height: 100%;
+			width: 100%;
+			background: darkgreen;
+			cursor: pointer;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="pump">
+			<div class="handle"></div>
+			<div class="rod"></div>
+		</div>
+		<div class="body"  style="-webkit-app-region: drag">
+			<div class="volume-level">
+				<div class="volume-window"></div>
+			</div>
+		</div>
+	</div>
+	<script src="./render.js"></script>
+</body>
+</html>
