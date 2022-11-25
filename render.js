@@ -32,4 +32,4 @@ $(".pump").draggable({
 	}
 });
 
-setInterval(() => setVolume(currentVolume - 0.1), 100);
+setInterval(() => setVolume(currentVolume - 0.1), 50);
